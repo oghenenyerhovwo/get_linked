@@ -1,0 +1,92 @@
+.comment{
+    padding: 2rem 1rem;
+    width: 100%;
+    position: relative;
+}
+
+.comment_img{
+    margin-right: 0.5rem;
+    position: absolute;
+    top: 2rem;
+    left: 1rem;
+}
+
+.comment_img > img{
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50% !important;
+    border: 1px solid #e6e6e6; 
+    object-fit: cover;
+    object-position: top;
+}
+
+.comment_body{
+    margin-left: 2.5rem;
+}
+
+.comment_body_heading{
+    display: flex;
+    align-items: center;
+}
+
+.comment_body_heading > div:first-child {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.comment_body_heading > div:first-child > h3{
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: unset;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.comment_body_heading > div:last-child{
+    display: flex;
+    margin-left: 1rem;
+    flex: 0 0 auto;
+    align-items: center;
+}
+
+.comment_body_heading > div:last-child > div{
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 50% !important;
+    background-color: var(--color-primary);
+}
+
+.comment_body_heading > div:last-child > p{
+    font-weight: 800;
+    font-size: 0.7rem;
+    line-height: unset;
+    color: #6b7280;
+    margin-left: 0.5rem;
+    color: var(--color-primary);
+    white-space: nowrap;
+}
+
+.comment_dotmenu{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    transition: 0.5s linear;
+}
+
+.comment_dotmenu svg{
+    color: #6b7280 !important;
+    fill: #6b7280 !important;
+    stroke: #6b7280 !important;
+}
+
+.comment_pin{
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    color: #6b7280;
+    font-size: 1.1rem;
+    transform: rotate(-90deg);
+}

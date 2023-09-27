@@ -1,0 +1,45 @@
+.app_input_emoji{
+    border: 1px solid rgba(255, 87, 90,0.2);
+}
+
+.app_input_emoji > div{
+    padding: 0.5rem;
+}
+
+.app_input_emoji > div  div{
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.app_input_emoji > div > div > button > svg{
+    font-size: 1rem !important;
+    color: var(--color-primary);
+}
+
+
+.app_input_emoji > div:last-child{
+    border-top: 1px solid rgba(161, 161, 161, 0.1);
+    background-color: rgba(161, 161, 161, 0.1);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.app_input_emoji > div:last-child > button{
+    padding: 0.65rem 0.8rem;
+    background-color: var(--color-secondary);
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s linear;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.app_input_emoji > div:last-child > button:hover{
+    padding: 0.8rem 1rem;
+}
+
+.app_input_emoji > div:last-child > button > span{
+    margin: 0 0.2rem;
+}

@@ -1,0 +1,13 @@
+.app__picture{
+    grid-column: span 12;
+
+}
+.app__picture img{
+    width: 100%;
+}
+
+@media (min-width: 400px) {
+    .app__picture{
+        grid-column: span 6;
+    }
+}

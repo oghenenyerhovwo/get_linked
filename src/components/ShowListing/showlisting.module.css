@@ -1,0 +1,289 @@
+.show_listing{
+    background: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    width: min(100%, 35rem);
+    overflow-y: auto;
+    padding: 1rem 0.5rem;
+    box-shadow: rgba(17,12,46,0.15) 0px
+    8px 4px 0px;
+    border: 1px solid #eeecec;
+    border-top-left-radius: 1.2rem;
+    border-top-right-radius: 1.2rem;
+    position: absolute;
+    bottom: 0;
+    height: 80%;
+}
+
+.show_listing::-webkit-scrollbar-track{
+    padding: 2px 0;
+    background-color: #ecebeb;
+    border-radius: 1rem;
+}
+  
+.show_listing::-webkit-scrollbar{
+    width: 0.2rem;
+}
+  
+.show_listing::-webkit-scrollbar-thumb{
+    border-radius: 1rem;
+    box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: var(--color-secondary);
+}
+
+.show_listing_section_one{
+    display: flex;
+    flex-direction: column;
+}
+
+.show_listing_section_one_media{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.show_listing_section_one_media_img{
+    display: flex;
+    flex-direction: column;
+}
+
+.show_listing_section_one_media_img_file{
+    width: min(70vw, 25rem);
+    height: min(60vw, 25rem);
+    display: flex;
+    align-self: center;
+}
+
+.show_listing_section_one_media_img_file > img{
+    width: 100%;
+    height: 100%;
+    justify-self: center;
+    object-fit: cover;
+    border-radius: 0.1rem;
+}
+
+.show_listing_section_one_media_img_circle_container{
+    align-self: center;
+    display: flex;
+}
+
+.show_listing_section_one_media_img_circle{
+    height: 0.6rem;
+    width: 0.6rem;
+    border-radius: 50%;
+    border: 1px solid var(--color-primary);
+    margin: 0 0.2rem;
+    transition: 0.5s;
+}
+
+.show_listing_section_one_media_img_circle_active{
+    background-color: var(--color-primary);
+    transition: 0.5s;
+}
+
+.show_listing_section_one_media_img_arrows{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    position: absolute;
+    bottom: 0rem;
+    z-index: 9;
+}
+
+.show_listing_section_one_media_img_arrows_icon{
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    color: rgb(190, 190, 190);
+}
+
+.show_listing_section_one_media_img_arrows_icon_active{
+    color: var(--color-secondary);
+    
+}
+
+.show_listing_section_one_media_img_arrows_icon_active:hover{
+    border: 1px solid rgb(190, 190, 190);
+}
+
+.show_listing_section_one_text{
+
+}
+.show_listing_section_one_text_title{
+    font-weight: 800;
+    font-size: 1.8rem;
+    line-height: unset;
+}
+
+.show_listing_section_one_text_interest{
+    font-size: 0.85rem;
+    color: var(--color-secondary);
+    line-height: unset;
+    color: #6b7280;
+    font-weight: 500;
+}
+
+.show_listing_section_one_text_price{
+    display: flex;
+    align-items: flex-end;
+}
+
+.show_listing_section_one_text_price h3{
+    display: flex;
+    color: #20a020;
+    font-weight: 800;
+    font-size: 1.4rem;
+    line-height: unset;
+}
+
+.show_listing_section_one_text_price p{
+    display: flex;
+    font-weight: 800;
+    font-size: 0.9rem;
+    line-height: unset;
+    color: #6b7280;
+}
+
+.show_listing_section_one_text_wishlist_container{
+    height: 1.6rem;
+    position: relative;
+}
+
+.show_listing_section_one_text_wishlist{
+    display: flex;
+    align-items: center;
+    position: absolute;
+}
+
+.show_listing_section_one_text_wishlist svg{
+    color: var(--color-red);
+    font-size: 1.6rem;
+}
+
+.show_listing_section_one_text_wishlist span{
+    margin-left: 0.4rem;
+    font-size: 0.75rem;
+}
+
+.show_listing_section_one_text_wishlist_no_interest{
+    cursor: pointer;
+}
+
+.show_listing_section_one_text_wishlist_no_interest:hover{
+    text-decoration: underline;
+    color: var(--color-red);
+}
+
+.show_listing_section_divide_line{
+    height: 0.1rem;
+    background-color: rgb(190, 190, 190);
+}
+
+.show_listing_section_two_tab_container{
+    display: flex;
+    border-radius: 0.6rem;
+}
+
+.show_listing_section_two_tab{
+    width: 25%;
+}
+
+.show_listing_section_two_tab button{
+    background-color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.8rem;
+    transition: 0.5s linear;
+    border-left: 1px solid rgba(255, 87, 90,0.2);
+    border-top: 1px solid rgba(255, 87, 90,0.2);
+    border-bottom: 1px solid rgba(255, 87, 90,0.2);
+    width: 100%;
+}
+
+.show_listing_section_two_tab:last-child button{
+    border-right: 1px solid rgba(255, 87, 90,0.2);
+}
+
+.show_listing_section_two_tab button:hover,
+.show_listing_section_two_tab_active button{
+    background-color: var(--color-secondary);
+    color: #fff;
+}
+
+.show_listing_section_two_tab_description h2{
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: unset;
+    color: #6b7280;
+}
+
+.show_listing_section_two_tab_description h3{
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: unset;
+    color: #6b7280;
+}
+
+.show_listing_section_two_tab_description_item{
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.show_listing_section_two_tab_description_item p {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: unset;
+    color: #6b7280;
+}
+
+.show_listing_section_two_tab_description_item p:first-child{
+    margin-right: 0.5rem;
+}
+
+.show_listing_section_two_tab_description_item:last-child{
+    margin-top: 2rem;
+}
+
+.show_listing_section_two_tab_description_author p{
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: unset;
+    color: #6b7280;
+    margin-top: 2rem;
+}
+
+.show_listing_section_two_tab_description_author_icon{
+    display: flex;
+    justify-content: center;
+}
+
+.show_listing_section_two_tab_description_author_icon > a{
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    font-size: 0.9rem;
+    border: 1px solid var(--color-secondary);
+    color: var(--color-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s linear;
+}
+
+.show_listing_section_two_tab_description_author_icon > a:hover,
+.show_listing_section_two_tab_description_author_icon > a:active{
+    background-color: var(--color-secondary);
+    color: #fff;
+}
+
+.show_listing_section_two_tab_comment > div:first-child > div{
+    border-top: 1px solid #6b7280;
+}
+
+.show_listing_section_two_tab_comment > div:first-child > div:first-child{
+    border-top: unset;
+}

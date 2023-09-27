@@ -1,0 +1,19 @@
+.scrollbar_outer{
+    position: relative;
+    height: 100%;
+    width: 0.5rem;
+    border-radius: 1rem;
+    background: #ecebeb;
+    z-index: 99;
+}
+
+.scrollbar_inner{
+    background: var(--color-secondary);
+    width: 0.5rem;
+    border-radius: 1rem;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    height: 10rem;
+}

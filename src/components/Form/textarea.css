@@ -1,0 +1,7 @@
+/* ============================== */
+/* text area */
+/* ============================== */
+
+.app__textarea-field {
+  min-height: 15rem !important;
+}

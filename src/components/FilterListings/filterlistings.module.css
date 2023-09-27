@@ -1,0 +1,90 @@
+.filterlistings{
+    height: 50rem;
+    padding: 1rem;
+}
+
+.filterlistings h2{
+  font-size: 1.15rem;
+  line-height: 1.6rem;
+}
+
+.filterlistings label{
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.filterlistings button{
+  background: var(--color-secondary);
+  text-align: center;
+  padding: 0.8rem;
+  border-radius: 1.2rem;
+  color: #fff;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.form_column{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form_column div{
+  width: 45%;
+}
+
+.price_range_bar_container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 6rem;
+}
+
+.price_range_bar{
+  position: relative;
+}
+
+.price_range_bar_outer{
+  height: 0.5rem;
+  border-radius: 1rem;
+  background: #ecebeb;
+  position: relative;
+}
+
+.price_range_bar_inner{
+  background: var(--color-secondary);
+  height: 0.5rem;
+  border-radius: 1rem;
+  position: absolute;
+  z-index: 1;
+}
+
+.price_range_circle_outer{
+  border: 1px solid var(--color-secondary);
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 9;
+  background: #fff;
+}
+
+.price_range_circle_outer:first-child{
+  left: 0;
+}
+
+.price_range_circle_outer:last-child{
+  right: 0;
+}
+
+.price_range_circle_inner{
+  border: 2px solid rgba(39, 79, 174, 0.4);
+  height: 1.1rem;
+  width: 1.1rem;
+  border-radius: 50%;
+  background: #fff;
+}

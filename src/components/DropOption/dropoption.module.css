@@ -1,0 +1,23 @@
+.drop_option{
+    position: relative;
+}
+
+.drop_option > div:last-child{
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    opacity: 0;
+}
+
+.drop_option > div > button {
+    background-color: transparent !important;
+    -webkit-transition: none !important;
+    transition: unset !important;
+    line-height: 2.5;
+    width: 100% !important;
+    height: 100% !important;
+}
