@@ -1,5 +1,5 @@
 // import FilterListings from "./FilterListings"
-// import Header from "./Header"
+import Header from "./Header"
 // import Listing from "./Listing"
 // import Jumbo from "./Jumbo"
 // import VideoPlayer from "./VideoPlayer"
@@ -26,7 +26,7 @@ import AppContainer from "./AppContainer"
 // import DotMenu from "./DotMenu"
 
 export {
-    // Header,
+    Header,
     // FilterListings,
     // Listing,
     // Jumbo,

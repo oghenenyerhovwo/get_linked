@@ -15,6 +15,9 @@ function App() {
   return (
     <BrowserRouter>
         <AppContainer>
+          <header>
+            <Header />
+          </header>
           <main>
             <Routes>
               <Route path="/" element={<HomeScreen />} exact></Route> 

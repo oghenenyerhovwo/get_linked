@@ -1,7 +1,9 @@
 import {
-    logo,
+    hamburgerMenu,
+    cancelIcon,
 } from "./images"
 
 export {
-    logo,
+    hamburgerMenu,
+    cancelIcon,
 }

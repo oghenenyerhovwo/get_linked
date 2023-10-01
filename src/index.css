@@ -1,13 +1,49 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face{font-family: MontserratItalic; src: url('./assets/font-family/Montserrat/Montserrat-Italic-VariableFont_wght.ttf')}
+@font-face{font-family: Montserrat; src: url('./assets/font-family/Montserrat/Montserrat-VariableFont_wght.ttf')}
+@font-face{font-family: ClashDisplay; src: url('./assets/font-family/ClashDisplay/FontsFree-Net-ClashDisplay-Variable.ttf')}
+
+:root {
+  --font-montserrat: "Montserrat", ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+  --font-montserratItalic: "MontserratItalic", ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+  --font-clashdisplay: "ClashDisplay", ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+  
+  --base-color: #150E28;
+  --medium-purple: #D434FE;
+  --white-color: #fff;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  background: var(--base-color);
+  color: var(--white-color);
+  /* background: linear-gradient(0deg, #D434FE, #D434FE),
+linear-gradient(0deg, #FFFFFF, #FFFFFF); */
+
+  min-height: 100vh;
+  width: 100%;
+  font-family: var(--font-montserrat);
+  overflow-x: hidden;
 }
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+input,
+select,
+textarea,
+button{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  outline: 0;
+  border: 0;
+}
+
