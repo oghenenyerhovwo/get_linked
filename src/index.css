@@ -1,16 +1,22 @@
 @font-face{font-family: MontserratItalic; src: url('./assets/font-family/Montserrat/Montserrat-Italic-VariableFont_wght.ttf')}
 @font-face{font-family: Montserrat; src: url('./assets/font-family/Montserrat/Montserrat-VariableFont_wght.ttf')}
 @font-face{font-family: ClashDisplay; src: url('./assets/font-family/ClashDisplay/FontsFree-Net-ClashDisplay-Variable.ttf')}
+@font-face{font-family: Unica_One; src: url('./assets/font-family/Unica_One/UnicaOne-Regular.ttf')}
 
 :root {
   --font-montserrat: "Montserrat", ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
   --font-montserratItalic: "MontserratItalic", ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
   --font-clashdisplay: "ClashDisplay", ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+  --font-unica_one: "Unica_One", ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
   
   --base-color: #150E28;
   --medium-purple: #D434FE;
   --white-color: #fff;
 
+}
+
+html{
+  font-size: 12px;
 }
 
 body{

@@ -1,3 +1,24 @@
+/* ============================== */
+/* Spacing */
+/* ============================== */
+.spacing-xs{
+    margin-bottom: 0.5rem; 
+  }
+.spacing-sm{
+    margin-bottom: 1rem; 
+}
+.spacing-md{
+    margin-bottom: 2rem; 
+}
+.spacing-lg{
+    margin-bottom: 4rem; 
+}
+
+.spacing-xl{
+    margin-bottom: 6rem; 
+}
+  
+
 .register_button{
     background: linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%);
     font-size: 0.8rem;

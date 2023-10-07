@@ -1,0 +1,119 @@
+.sectionfour{
+    margin-top: 2rem;
+}
+
+.sectionfour_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: min(100%, 25rem);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+}
+
+.sectionfour_icons{
+    display: none;
+    position: absolute;
+}
+
+.sectionfour_img{
+    width: min(100%, 16rem);
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.sectionfour_purpleStar{
+    top: -10%;
+    left: 30%;
+    width: 1.275rem;
+    height: 1.65rem;
+    z-index: -1;
+}
+
+.sectionfour_star1{
+    top: 40%;
+    left: 60%;
+    width: 1.275rem;
+    height: 1.65rem;
+    z-index: -1;
+}
+
+.sectionfour_star2{
+    top: 90%;
+    left: 90%;
+    width: 1.275rem;
+    height: 1.65rem;
+    z-index: -1;
+}
+
+.sectionfour_img > img:first-child {
+    width: 100%;
+}
+
+.sectionfour_text{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.sectionfour_text > h2{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-clashdisplay);
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 26.6px;
+    position: relative;
+}
+
+.sectionfour_text > h2 > span:last-child,
+.sectionfour_text > p > span{
+    color: var(--medium-purple);
+}
+
+.sectionfour_text p{
+    font-size: 0.8125rem;
+    line-height: 27.5px;
+}
+
+@media screen and (min-width: 750px){
+    .sectionfour_container{
+        flex-direction: row;
+        width: min(100%, 100rem);
+        justify-content: space-between;
+        padding: 1rem 6rem;
+    }
+
+    .sectionfour_text{
+        text-align: left;
+        width: 45%;
+    }
+
+    .sectionfour_img{
+        width: min(40%, 30rem);
+    }
+
+    .sectionfour_icons{
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .sectionfour_text > h2{
+        font-size: 2rem;
+        line-height: 42.56px;
+    }
+
+    .sectionfour_text > p{
+        font-size: 0.875rem;
+    }
+}
+
+/* @media screen and (min-width: 750px){
+
+}
+
+@media screen and (min-width: 1024px){
+
+} */

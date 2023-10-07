@@ -65,6 +65,7 @@
     align-items: center;
     justify-content: center;
     padding: 1rem;
+    z-index: 99;
 }
 
 .navbar_smallscreen_overlay_container{

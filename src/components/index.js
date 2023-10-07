@@ -24,6 +24,13 @@ import AppContainer from "./AppContainer"
 // import ShowListing from "./ShowListing"
 // import Comment from "./Comment"
 // import DotMenu from "./DotMenu"
+import {
+    SectionOne,
+    SectionTwo,
+    SectionThree,
+    SectionFour,
+    SectionFive,
+} from "./HomeComp"
 
 export {
     Header,
@@ -52,4 +59,9 @@ export {
     // ShowListing,
     // Comment,
     // DotMenu,
+    SectionOne,
+    SectionTwo,
+    SectionThree,
+    SectionFour,
+    SectionFive,
 }
