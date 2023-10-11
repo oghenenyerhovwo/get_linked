@@ -1,5 +1,6 @@
 .sectionfour{
-    margin-top: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 .sectionfour_container{
@@ -78,9 +79,14 @@
 }
 
 @media screen and (min-width: 750px){
+    .sectionfour{
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+
     .sectionfour_container{
         flex-direction: row;
-        width: min(100%, 100rem);
+        width: min(100%, 85rem);
         justify-content: space-between;
         padding: 1rem 6rem;
     }
@@ -88,10 +94,11 @@
     .sectionfour_text{
         text-align: left;
         width: 45%;
+        margin-left: 2rem;
     }
 
     .sectionfour_img{
-        width: min(40%, 30rem);
+        flex: 1;
     }
 
     .sectionfour_icons{
@@ -99,7 +106,12 @@
     }
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1200px){
+    .sectionfour{
+        padding-top: 9rem;
+        padding-bottom: 9rem;
+    }
+
     .sectionfour_text > h2{
         font-size: 2rem;
         line-height: 42.56px;

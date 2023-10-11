@@ -6,6 +6,12 @@ import {
   SectionTwo,
   SectionThree,
   SectionFour,
+  SectionFive,
+  SectionSix,
+  SectionSeven,
+  SectionEight,
+  SectionNine,
+  Footer,
 } from "../../components"
 
 // import objects and functions
@@ -22,6 +28,12 @@ const HomeScreen = () => {
       <SectionTwo />
       <SectionThree />
       <SectionFour />
+      <SectionFive />
+      <SectionSix />
+      <SectionSeven />
+      <SectionEight />
+      <SectionNine />
+      <Footer />
     </div>
   )
 }

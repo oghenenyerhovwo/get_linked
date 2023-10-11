@@ -1,0 +1,191 @@
+.sectionseven{
+    margin-top: 2rem;
+    border-bottom: none !important;
+    background: var(--dark-purple);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.sectionseven_container{
+    width: min(100%, 25rem);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+}
+
+.sectionseven_text_section{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.sectionseven_text_section > h2{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-clashdisplay);
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 26.6px;
+    position: relative;
+}
+
+.sectionseven_text_section > h2 > span:last-child{
+    color: var(--medium-purple);
+}
+
+.sectionseven_img_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sectionseven_img_section_cup{
+    width: min(100%, 16rem);
+}
+
+.sectionseven_img_section_cup img{
+    width: 100%;
+    margin-bottom: 6rem;
+}
+
+.sectionseven_img_section_medal{
+    display: flex;
+    align-items: center;
+}
+
+.sectionseven_img_section_medal_card_wrapper{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.sectionseven_img_section_medal_card{
+    border: 1px solid #D434FE;
+    padding-top: 3.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-radius: 0.4rem;
+    scale: 1;
+    transition: linear 0.5s;
+}
+
+.sectionseven_img_section_medal_card img{
+    position: absolute;
+    bottom: 70%;
+    width: 100%;
+    z-index: 9;
+    transition: linear 0.5s;
+}
+
+.sectionseven_img_section_medal_card h3{
+    font-size: 0.75rem;
+    font-weight: 700;
+    z-index: 9;
+}
+
+.sectionseven_img_section_medal_card h4{
+    font-size: 0.75rem;
+    font-weight: 600;
+    z-index: 9;
+}
+
+.sectionseven_img_section_medal_card h3:last-child{
+    color: var(--medium-purple);
+}
+
+.sectionseven_img_section_medal_card_overlay{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #D434FE, #D434FE),
+    linear-gradient(0deg, rgba(212, 52, 254, 0.12), rgba(212, 52, 254, 0.12));
+    border: 1px solid #D434FE;
+    opacity: 0.1;
+    border-radius: 0.4rem;
+}
+
+.sectionseven_img_section_medal_card_wrapper_active .sectionseven_img_section_medal_card{
+    scale: 1.1;
+}
+
+.sectionseven_img_section_medal_card_wrapper_active .sectionseven_img_section_medal_card img{
+    width: 120%;
+}
+
+@media screen and (min-width: 750px){
+    .sectionseven{
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+
+    .sectionseven_container{
+        width: min(100%, 85rem);
+        padding: 1rem 6rem;
+    }
+
+    .sectionseven_text_section{
+        text-align: left;
+        width: min(40%,30rem);
+        margin-left: 60%;
+        margin-bottom: 1rem;
+    }
+
+    .sectionseven_img_section{
+        flex-direction: row;
+        align-items: flex-end;
+    }
+
+    .sectionseven_img_section_cup{
+        flex: 1;
+    }
+
+    .sectionseven_img_section_cup img{
+        width: 100%;
+        margin-bottom: 0rem;
+    }
+
+    .sectionseven_img_section_medal_card h3{
+        font-size: 1.375rem;
+    }
+    
+    .sectionseven_img_section_medal_card h4{
+        font-size: 1.125rem;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .sectionseven{
+        padding-top: 9rem;
+        padding-bottom: 9rem;
+    }
+
+    .sectionseven_text_section > h2{
+        font-size: 2rem;
+        line-height: 42.56px;
+    }
+
+    .sectionseven_text_section > p{
+        font-size: 0.875rem;
+    }
+
+    .sectionseven_img_section_medal_card{
+        padding-top: 4.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    .sectionseven_img_section_medal_card h3{
+        font-size: 2rem;
+    }
+
+    .sectionseven_img_section_medal_card h4{
+        font-size: 1.5rem;
+    }
+}

@@ -12,11 +12,12 @@
   --base-color: #150E28;
   --medium-purple: #D434FE;
   --white-color: #fff;
+  --dark-purple: #130B25;
 
 }
 
 html{
-  font-size: 12px;
+  font-size: 14px;
 }
 
 body{

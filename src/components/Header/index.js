@@ -8,7 +8,7 @@ import { hamburgerMenu, cancelIcon } from "../../assets"
 // import css
 import styles from "./header.module.css"
 
-const swipeRight = {
+const navVariant = {
   hidden: {
     transform: "scaleY(0)",
   },
@@ -89,7 +89,7 @@ const Header = () => {
               displayMenu && (
                 <motion.div 
                   className={`${styles.navbar_smallscreen_overlay}`}
-                  variants={swipeRight}
+                  variants={navVariant}
                   initial="hidden"
                   animate="visible"
                   exit="exit"

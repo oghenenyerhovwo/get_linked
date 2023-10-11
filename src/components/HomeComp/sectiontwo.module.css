@@ -1,5 +1,6 @@
 .sectiontwo{
-    margin-top: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 .sectiontwo_container{
@@ -33,8 +34,8 @@
 }
 
 .sectiontwo_icons_arrow{
-    bottom: -10%;
-    right: -2rem;
+    bottom: -1%;
+    right: -1rem;
     width: 3rem;
     height: 3.6rem;
     z-index: -1;
@@ -76,9 +77,14 @@
 }
 
 @media screen and (min-width: 750px){
+    .sectiontwo{
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+
     .sectiontwo_container{
         flex-direction: row;
-        width: min(100%, 100rem);
+        width: min(100%, 85rem);
         justify-content: space-between;
         padding: 1rem 6rem;
     }
@@ -86,10 +92,11 @@
     .sectiontwo_text{
         text-align: left;
         width: 45%;
+        margin-left: 2rem;
     }
 
     .sectiontwo_img{
-        width: min(40%, 30rem);
+        flex: 1;
     }
 
     .sectiontwo_icons{
@@ -97,7 +104,12 @@
     }
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1200px){
+    .sectiontwo{
+        padding-top: 9rem;
+        padding-bottom: 9rem;
+    }
+
     .sectiontwo_text > h2{
         font-size: 2rem;
         line-height: 42.56px;

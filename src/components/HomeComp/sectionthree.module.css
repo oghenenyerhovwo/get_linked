@@ -1,5 +1,6 @@
 .sectionthree{
-    margin-top: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 .sectionthree_container{
@@ -69,21 +70,27 @@
 }
 
 @media screen and (min-width: 750px){
+    .sectionthree{
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+
     .sectionthree_container{
         flex-direction: row;
-        width: min(100%, 100rem);
+        width: min(100%, 85rem);
         justify-content: space-between;
         padding: 1rem 6rem;
     }
 
     .sectionthree_text{
         text-align: left;
-        width: 40%;
         order: 1;
+        width: 45%;
+        margin-right: 2rem;
     }
 
     .sectionthree_img{
-        width: min(45%, 30rem);
+        flex: 1;
         order: 2;
     }
 
@@ -92,7 +99,12 @@
     }
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1200px){
+    .sectionthree{
+        padding-top: 9rem;
+        padding-bottom: 9rem;
+    }
+
     .sectionthree_text > h2{
         font-size: 2rem;
         line-height: 42.56px;

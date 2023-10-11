@@ -1,0 +1,211 @@
+.sectionsix{
+    border-bottom: none !important;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.sectionsix_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: min(100%, 25rem);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+}
+
+.sectionsix_container > h2{
+    font-family: var(--font-clashdisplay);
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 27px;
+}
+
+.sectionsix_container > p{
+    font-size: 0.875rem;
+    line-height: 24px;
+    width: min(100%, 20rem);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.sectionsix_event{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.sectionsix_event_main,
+.sectionsix_event_date{
+    margin-left: 2.5rem;
+}
+
+.sectionsix_event_main > h3,
+.sectionsix_event_date{
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 15px;
+    color: #D434FE;
+}
+
+.sectionsix_event_main > p{
+    font-size: 0.75rem;
+    line-height: 19px;
+}
+
+.sectionsix_event_lines_circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.sectionsix_event_lines_circle_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: space-between;
+    width: 2rem;
+    height: 100%;
+}
+
+.sectionsix_event_lines_circle_container > div:first-child{
+    flex: 1;
+    width: 0.125rem;
+    background: #D434FE;
+    margin-bottom: 0.25rem;
+}
+
+.sectionsix_event_lines_circle_container > div:last-child{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    color: #fff;
+    background: #D434FE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+}
+
+
+@media screen and (min-width: 750px){
+    .sectionsix{
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+
+    .sectionsix_container{
+        width: min(100%, 85rem);
+        padding: 1rem 6rem;
+    }
+
+    .sectionsix_container > h2{
+        font-size: 1.625rem;
+        line-height: 34.78px;
+    }
+
+    .sectionsix_event_main > h3,
+    .sectionsix_event_date{
+        font-size: 1.125rem;
+        line-height: 22.5px;
+    }
+
+    .sectionsix_event_main > p{
+        font-size: 0.875rem;
+        line-height: 23px;
+    }
+
+    .sectionsix_event{
+        flex-direction: row;
+        margin-bottom: 0rem;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    
+    .sectionsix_event_main,
+    .sectionsix_event_date{
+        padding-top: 3rem;
+        margin: 0rem;
+        width: calc(45% - 2rem);
+    }
+
+    .sectionsix_timeline > div:nth-child(odd) .sectionsix_event_main,
+    .sectionsix_timeline > div:nth-child(even) .sectionsix_event_date{
+        text-align: right;
+    }
+
+    .sectionsix_timeline > div:nth-child(even) .sectionsix_event_main{
+        order: 2;
+    }
+
+    .sectionsix_timeline > div:nth-child(even) .sectionsix_event_date{
+        order: 1;
+    }
+
+    .sectionsix_event_lines_circle_container > div:last-child{
+        margin-bottom: 0.25rem;
+    }
+
+    .sectionsix_event_lines_circle_container{
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .sectionsix{
+        padding-top: 9rem;
+        padding-bottom: 9rem;
+    }
+
+    .sectionsix_container > h2{
+        font-size: 2rem;
+        line-height: 42.56px;
+    }
+
+    .sectionsix_event_main > h3,
+    .sectionsix_event_date{
+        font-size: 1.5rem;
+        line-height: 30px;
+    }
+
+    .sectionsix_event_main > p{
+        font-size: 1rem;
+        line-height: 27px;
+    }
+
+    .sectionsix_event_main,
+    .sectionsix_event_date{
+        padding-top: 4.5rem;
+        margin-left: 0rem;
+    }
+
+    .sectionsix_event_lines_circle_container > div:first-child,
+    .sectionsix_event_lines_circle_container > div:last-child{
+        margin-bottom: 0.5rem;
+    }
+
+    .sectionsix_event_lines_circle_container > div:last-child{
+        width: 2.2rem;
+        height: 2.2rem;
+        font-size: 0.95rem;
+    }
+
+    .sectionsix_event_main,
+    .sectionsix_event_date{
+        width: calc(45% - 2.5rem);
+    }
+}
+
+/* @media screen and (min-width: 750px){
+
+}
+
+@media screen and (min-width: 1024px){
+
+} */

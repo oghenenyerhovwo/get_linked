@@ -1,0 +1,132 @@
+.sectioneight{
+    margin-top: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.sectioneight_container{
+    width: min(100%, 25rem);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+}
+
+.sectioneight_text_section{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.sectioneight_text_section > h2{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-clashdisplay);
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 26.6px;
+    position: relative;
+}
+
+.sectioneight_text_section > p{
+    font-size: 0.75rem;
+    line-height: 27.5px;
+}
+
+.sectioneight_img_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sectioneight_img_section{
+    padding: 2rem;
+    border: 1px solid #D434FE;
+    border-radius: 0.3rem;
+}
+
+.sectioneight_img_section_row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sectioneight_img_section_row > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.sectioneight_img_section_row > div > img{
+    width: 80%;
+}
+
+.sectioneight_img_section_column_lines{
+    width: 3px !important;
+    background: #D434FE;
+}
+
+.sectioneight_img_section_row_lines_wrapper{
+    margin: 0.5rem 0;
+    height: 3px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sectioneight_img_section_row_lines_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.sectioneight_img_section_row_lines{
+    width: 80%;
+    height: 3px !important;
+    background: #D434FE;
+}
+
+@media screen and (min-width: 750px){
+    .sectioneight{
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+
+    .sectioneight_container{
+        width: min(100%, 85rem);
+        padding: 1rem 6rem;
+    }
+
+    .sectioneight_text_section{
+        width: min(90%,30rem);
+        margin: 0 auto;
+        margin-bottom: 3rem;
+    }
+
+    .sectioneight_img_section{
+        padding: 4rem;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .sectioneight{
+        padding-top: 9rem;
+        padding-bottom: 9rem;
+    }
+
+    .sectioneight_text_section > h2{
+        font-size: 2rem;
+        line-height: 42.56px;
+    }
+
+    .sectioneight_text_section > p{
+        font-size: 0.875rem;
+    }
+
+    .sectioneight_img_section{
+        padding: 6rem;
+    }
+}

@@ -1,31 +1,74 @@
 import React from 'react'
-import styles from "./footer.module.css"
-import Link from "next/link"
+import { Link } from "react-router-dom"
 
-import { FaFacebook } from "react-icons/fa"
+// objects, items and functions
+import { 
+  linkedInIcon,
+  facebookIcon,
+  xIcon,
+  instagramIcon,
+  phoneIcon,
+  locationIcon,
+} from "../../assets"
+
+// import css
+import styles from "./footer.module.css"
 
 const Footer = () => {
   return (
-    <div className={styles.footer}>
-      
-      <div className={`container ${styles.footer_container}`}> 
-
-        <h4 className="spacing-md">YOMM TO THE WORLD</h4>
-        
-        <div className={`${styles.links} spacing-md`}>
-          <Link href={"#"}><a className={`spacing-sm ${styles.footer_link}`}>SUPPORT </a></Link>
-          <Link href={"#"}><a className={`spacing-sm ${styles.footer_link}`}>SUPPORT </a></Link>
-          <Link href={"#"}><a className={`spacing-sm ${styles.footer_link}`}>SUPPORT </a></Link>
+    <div className={`${styles.footer}`}>
+      <div className={`${styles.footer_container}`}>
+        <div>
+          <div className={`${styles.footer_col1} spacing-md`}>
+            <h2 className={`${styles.footer_logo} spacing-sm`}>
+              <Link to="/">
+                <span>get</span>
+                <span>linked</span>
+              </Link>
+            </h2>
+            <p className={`spacing-md`}>
+              Getlinked Tech Hackathon is a technology
+              innovation program established by a group 
+              of organizations with the aim of showcasing 
+              young and talented individuals in the field 
+              of technology
+            </p>
+            <div>
+              <p>Terms of Use</p>
+              <div></div>
+              <p>Privacy Policy</p>
+            </div>
+          </div>
+          <div className={`${styles.footer_col2} spacing-md`}>
+            <h3 className="spacing-xs">Useful Links</h3>
+            <p className="spacing-xs">Overview</p>
+            <p className="spacing-xs">Timeline</p>
+            <p className="spacing-xs">FAQs</p>
+            <p className="spacing-xs">Register</p>
+            <div>
+              <h4>Follow us</h4>
+              <div>
+                <img src={instagramIcon} alt="instagramIcon" />
+                <img src={xIcon} alt="xIcon" />
+                <img src={facebookIcon} alt="facebookIcon" />
+                <img src={linkedInIcon} alt="linkedInIcon" />
+              </div>
+            </div>
+          </div>
+          <div className={`${styles.footer_col3} spacing-md`}>
+           <h3 className="spacing-xs">Contact</h3>
+            <div>
+              <img src={phoneIcon} alt="phoneIcon" />
+              <p>+234  6707653444</p>
+            </div>
+            <div>
+              <img src={locationIcon} alt="locationIcon" />
+              <p>27,Alara Street Yaba 100012 Lagos State</p>
+            </div>
+          </div>
         </div>
-
-        <div className={`${styles.connect}`}>
-          <h5 className="spacing-md">Connect with Us</h5>
-          <Link href={"#"}><a className={`spacing-sm flex flex__center ${styles.footer_link}`}>Facebook <FaFacebook /> </a></Link>
-          <Link href={"#"}><a className={`spacing-sm ${styles.footer_link}`}>Email </a></Link>
-        </div>
-
-      </div>      
-      
+        <p>All rights reserved. © getlinked Ltd.</p>
+      </div>
     </div>
   )
 }

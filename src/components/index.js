@@ -24,12 +24,17 @@ import AppContainer from "./AppContainer"
 // import ShowListing from "./ShowListing"
 // import Comment from "./Comment"
 // import DotMenu from "./DotMenu"
+import Footer from "./Footer"
 import {
     SectionOne,
     SectionTwo,
     SectionThree,
     SectionFour,
     SectionFive,
+    SectionSix,
+    SectionSeven,
+    SectionEight,
+    SectionNine,
 } from "./HomeComp"
 
 export {
@@ -64,4 +69,9 @@ export {
     SectionThree,
     SectionFour,
     SectionFive,
+    SectionSix,
+    SectionSeven,
+    SectionEight,
+    SectionNine,
+    Footer,
 }

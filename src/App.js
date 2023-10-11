@@ -3,6 +3,7 @@ import {BrowserRouter, Routes, Route} from "react-router-dom"
 
 // importing screens
 import HomeScreen from "./screens/HomeScreen"
+import ContactScreen from "./screens/ContactScreen"
 
 // importing components
 import { Header, AppContainer } from "./components"
@@ -20,6 +21,7 @@ function App() {
           </header>
           <main>
             <Routes>
+              <Route path="/contact" element={<ContactScreen />} exact></Route> 
               <Route path="/" element={<HomeScreen />} exact></Route> 
             </Routes>
             <Routes>

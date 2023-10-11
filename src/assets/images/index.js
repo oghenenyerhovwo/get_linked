@@ -16,6 +16,25 @@ import bossLady from "./bossLady.png"
 import judgingCriteria from "./Judging Criteria Key attributes.png"
 import questionMark from "./questionMark.png"
 import faqPic from "./faqPic.png"
+import rewardCup  from "./rewardCup.png"
+import goldMedal from "./gold_medal 1.png"
+import silverMedal from "./silver_medal 1.png"
+import bronzeMedal from "./bronze_medal 1.png"
+import libertyAssuredLogo from "./Liberty company logo white colour.png"
+import libertyPayLogo from "./Liberty company logo white.png"
+import winWiseLogo from "./Winwise logo White colour 1.png"
+import whispermsLogo from "./wisper logo white.png"
+import payboxLogo from "./Paybox.png"
+import vizualPlusLogo from "./Vizual Plus.png"
+import privacyVector from "./Vector.png"
+import securityLockVector from "./08 1.png"
+import listTermsIcon from "./list terms.png"
+import linkedInIcon from "./ri_linkedin-fill.png"
+import facebookIcon from "./Vector (1).png"
+import xIcon from "./Vector (2).png"
+import instagramIcon from "./mdi_instagram.png"
+import phoneIcon from "./Group.png"
+import locationIcon from "./Vector (3).png"
 
 export {
     hamburgerMenu,
@@ -36,4 +55,23 @@ export {
     judgingCriteria,
     questionMark,
     faqPic,
+    rewardCup,
+    goldMedal,
+    silverMedal,
+    bronzeMedal,
+    libertyAssuredLogo,
+    libertyPayLogo,
+    winWiseLogo,
+    whispermsLogo,
+    payboxLogo,
+    vizualPlusLogo,
+    privacyVector,
+    securityLockVector,
+    listTermsIcon,
+    linkedInIcon,
+    facebookIcon,
+    xIcon,
+    instagramIcon,
+    phoneIcon,
+    locationIcon,
 }
