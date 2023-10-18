@@ -35,6 +35,12 @@ import xIcon from "./Vector (2).png"
 import instagramIcon from "./mdi_instagram.png"
 import phoneIcon from "./Group.png"
 import locationIcon from "./Vector (3).png"
+import registerSVG from "./3d-graphic-designer-showing-thumbs-up-png 1.png"
+import maleWalking from "./image_processing20200511-10310-13mnlsx.png"
+import femaleWalking from "./1f6b6-2640.png"
+import successfulMan from "./successful-man-3025713-2526911 1.png"
+import successfulIcon from "./successfully-done-5108472-4288033 1.png"
+import winkEmoji from "./1531010992wink-emoji-woman-png 1.png"
 
 export {
     hamburgerMenu,
@@ -74,4 +80,10 @@ export {
     instagramIcon,
     phoneIcon,
     locationIcon,
+    registerSVG,
+    maleWalking,
+    femaleWalking,
+    successfulMan,
+    successfulIcon,
+    winkEmoji,
 }

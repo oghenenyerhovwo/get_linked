@@ -13,6 +13,7 @@ const Textarea = props => {
         placeholder,
         required,
         description,
+        disabled,
     } = props
 
     const [inputError, setInputError] = useState()
@@ -23,18 +24,21 @@ const Textarea = props => {
 
   return (
     <div className={`app__textarea spacing-md ${error && "form__error"}`}>
-        <label className="form__label spacing-sm">{label} <span className="icon_required">{label && required && "*"} </span> <span className="not_required">{label && !required && "(optional)"} </span></label>
-        <div className="spacing-sm"> </div>
-        <p className="form_description">{description} </p> 
-        <div className="spacing-sm"> </div>
+        <div className="spacing-xs form__label">
+            <label>{label} <span className="icon_required">{label && required && "*"} </span> <span className="not_required">{label && !required && ""} </span></label>
+        </div>
+        <p className="spacing-xs form_description">{description} </p> 
+            
         <textarea
-            className="app__textarea-field form__field"
             onChange={onChange}
             value={trim ? value.trim() : value}
             name={name}
-            placeholder={placeholder}    
+            placeholder={placeholder}
+            disabled={disabled}   
+            type="text"
+            className="form__field"
         ></textarea>
-        <p className="form__error-paragraph smalltext__avenir">{inputError} </p>
+        <p className="form__error-paragraph">{inputError} </p>
     </div>
   )
 }

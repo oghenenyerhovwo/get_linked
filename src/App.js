@@ -4,6 +4,7 @@ import {BrowserRouter, Routes, Route} from "react-router-dom"
 // importing screens
 import HomeScreen from "./screens/HomeScreen"
 import ContactScreen from "./screens/ContactScreen"
+import RegisterScreen from "./screens/RegisterScreen"
 
 // importing components
 import { Header, AppContainer } from "./components"
@@ -12,7 +13,6 @@ import { Header, AppContainer } from "./components"
 import "./App.css"
 
 function App() {
-
   return (
     <BrowserRouter>
         <AppContainer>
@@ -22,6 +22,7 @@ function App() {
           <main>
             <Routes>
               <Route path="/contact" element={<ContactScreen />} exact></Route> 
+              <Route path="/register" element={<RegisterScreen />} exact></Route> 
               <Route path="/" element={<HomeScreen />} exact></Route> 
             </Routes>
             <Routes>

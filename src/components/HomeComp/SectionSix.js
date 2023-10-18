@@ -1,10 +1,5 @@
 import React from 'react'
 
-// import objects and functions
-import {
-  
-} from "../../assets"
-
 // importing css
 import styles from "./sectionsix.module.css"
 
@@ -47,9 +42,11 @@ const timeline = [
   },
 ]
 
-const SectionSix = () => {
+const SectionSix = props => {
+  const { elTimeline } = props
+
   return (
-    <section className={`${styles.sectionsix}`}>
+    <section ref={elTimeline} className={`${styles.sectionsix}`}>
       <div className={`${styles.sectionsix_container}`}>
         <h2 className="spacing-sm">Timeline</h2>
         <p className="spacing-md">Here is the breakdown of the time we anticipate using for the upcoming event.</p>

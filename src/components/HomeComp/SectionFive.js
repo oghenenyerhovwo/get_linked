@@ -71,11 +71,12 @@ const faqAnswersVariant = {
   
 }
 
-const SectionFive = () => {
+const SectionFive = props => {
+  const { elFaq } = props
   const [faqAnswerId, setFaqAnswerId] = useState("")
 
   return (
-    <section className={`${styles.sectionfive}`}>
+    <section ref={elFaq} className={`${styles.sectionfive}`}>
       <div className={`${styles.sectionfive_container}`}>
         <div className={`${styles.sectionfive_text}`}>
           <h2 className="spacing-sm">

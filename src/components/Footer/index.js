@@ -41,10 +41,18 @@ const Footer = () => {
           </div>
           <div className={`${styles.footer_col2} spacing-md`}>
             <h3 className="spacing-xs">Useful Links</h3>
-            <p className="spacing-xs">Overview</p>
-            <p className="spacing-xs">Timeline</p>
-            <p className="spacing-xs">FAQs</p>
-            <p className="spacing-xs">Register</p>
+            <p className="spacing-xs">
+              <Link to="/?scrollTo=overview">Overview</Link>
+            </p>
+            <p className="spacing-xs">
+              <Link to="/?scrollTo=timeline">Timeline</Link>
+            </p>
+            <p className="spacing-xs">
+              <Link to="/?scrollTo=faqs">FAQs</Link>
+            </p>
+            <p className="spacing-xs">
+              <Link to="/register">Register</Link>
+            </p>
             <div>
               <h4>Follow us</h4>
               <div>

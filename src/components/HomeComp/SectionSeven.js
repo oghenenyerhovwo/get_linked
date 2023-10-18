@@ -71,9 +71,7 @@ const SectionSeven = () => {
                         className={`
                         ${styles.sectionseven_img_section_medal_card}
                       `}
-                      >
-                        <div className={`${styles.sectionseven_img_section_medal_card_overlay}`}></div>
-                        <img src={reward.imgSrc} alt={`reward${reward._id}}`} />
+                      ><img src={reward.imgSrc} alt={`reward${reward._id}}`} />
                         <h3 className="spacing-xs">{reward.position}</h3>
                         <h4 className="spacing-xs">Runner</h4>
                         <h3 className="spacing-xs">{reward.price}</h3>

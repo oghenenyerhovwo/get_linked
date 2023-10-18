@@ -44,19 +44,19 @@ const handleIcon = () => {
 }
 
   return (
-    <div className={`app_input spacing-md ${error && "form__error"} app_input-number`}>
-        <label className="form__label spacing-sm">{label} <span className="icon_required">{label && required && "*"} </span> <span className="not_required">{label && !required && "(optional)"} </span></label>
-        <div className="spacing-sm"> </div>
-        <p className="form_description">{description} </p> 
-        <div className="spacing-sm"> </div>
+    <div className={`app_input spacing-sm ${error && "form__error"} app_input-number`}>
+        <div className="spacing-xs form__label">
+            <label>{label} <span className="icon_required">{label && required && "*"} </span> <span className="not_required">{label && !required && ""} </span></label>
+        </div>
+        <p className="spacing-xs form_description">{description} </p> 
         <input
-            className="form__field" 
             onChange={onChange}
             value={trim ? value.trim() : value}
             type={inputType}
             name={name}
             placeholder={placeholder}
             disabled={disabled}
+            className="form__field"
         />
         {
             type === "password" && (
@@ -65,7 +65,7 @@ const handleIcon = () => {
                 </div>
             )
         }
-        <p className="form__error-paragraph smalltext__avenir">{inputError} </p>
+        <p className="form__error-paragraph">{inputError} </p>
     </div>
   )
 }

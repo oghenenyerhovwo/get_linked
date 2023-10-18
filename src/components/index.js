@@ -4,13 +4,13 @@ import Header from "./Header"
 // import Jumbo from "./Jumbo"
 // import VideoPlayer from "./VideoPlayer"
 // import Picture from "./Picture"
-// import Form from "./Form"
+import Form from "./Form"
 // import Google from "./Google"
 // import AddPicture from "./AddPicture"
 import LoadingBox from "./LoadingBox"
-// import MessageBox from "./MessageBox"
+import MessageBox from "./MessageBox"
 // import ErrorPage from "./ErrorPage"
-// import Spinner from "./Spinner"
+import Spinner from "./Spinner"
 // import DateTime from "./DateTime"
 // import Pricing from "./Pricing"
 // import Location from "./Location"
@@ -36,6 +36,7 @@ import {
     SectionEight,
     SectionNine,
 } from "./HomeComp"
+import SuccessfulRegistration from "./SuccessfulRegistration"
 
 export {
     Header,
@@ -44,13 +45,13 @@ export {
     // Jumbo,
     // VideoPlayer,
     // Picture,
-    // Form,
+    Form,
     // Google,
     // AddPicture,
     LoadingBox,
-    // MessageBox,
+    MessageBox,
     // ErrorPage,
-    // Spinner,
+    Spinner,
     // DateTime,
     // Pricing,
     // Location,
@@ -74,4 +75,5 @@ export {
     SectionEight,
     SectionNine,
     Footer,
+    SuccessfulRegistration,
 }

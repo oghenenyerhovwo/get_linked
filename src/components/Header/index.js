@@ -34,24 +34,28 @@ const navVariant = {
 }
 
 const NavLinks = (props) => {
+  const {
+    closeMenu,
+  } = props
+
   return (
     <div className={`${styles.nav_links_container}`}>
       <ul>
           <li>
-            <Link to="/timeline">Timeline</Link>
+            <Link onClick={closeMenu} to="/?scrollTo=timeline">Timeline</Link>
           </li>
           <li>
-            <Link to="/overview">Overview</Link>
+            <Link onClick={closeMenu} to="/?scrollTo=overview">Overview</Link>
           </li>
           <li>
-            <Link to="/faqs">FAQs</Link>
+            <Link onClick={closeMenu} to="/?scrollTo=faqs">FAQs</Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link onClick={closeMenu} to="/contact">Contact</Link>
           </li>
       </ul>
       <button className="register_button">
-        <Link to="/register">Register</Link>
+        <Link onClick={closeMenu} to="/register">Register</Link>
       </button>
     </div>
   )
@@ -102,7 +106,9 @@ const Header = () => {
                     >
                       <img src={cancelIcon} alt="cancelIcon" />
                     </div>
-                    <NavLinks />
+                    <NavLinks 
+                      closeMenu={closeMenu}
+                    />
                     </div>
                 </motion.div>
               )
@@ -112,7 +118,9 @@ const Header = () => {
         <nav 
           className={`${styles.navbar_largescreen} ${styles.navbar}`}
         >
-          <NavLinks />
+          <NavLinks 
+            closeMenu={closeMenu}
+          />
         </nav>
       </div>
     </div>

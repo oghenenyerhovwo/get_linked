@@ -1,0 +1,268 @@
+.register{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.register_container{
+    width: min(100%, 35rem);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.register_text_section_card_wrapper{
+    padding: 2rem 1rem;
+    width: min(100%, 30rem);
+    border-radius: 0.9rem;
+}
+
+.register_text_section_card > h3{
+    font-size: 0.9375rem;
+    line-height: 18px;
+    font-weight: 700;
+    font-family: var(--font-clashdisplay);
+    color: var(--medium-purple);
+    display: flex;
+    flex-direction: column;
+}
+
+.register_text_section_card_paragraph{
+    display: flex;
+    align-items: flex-end;
+}
+
+.register_text_section_card_paragraph > p{
+    margin-right: 1.5rem;
+    font-size: 0.75rem;
+    line-height: 15px;
+}
+
+.register_text_section_card_paragraph > div > img{
+    margin-left: 0.075rem;
+    height: 1.43375rem;
+}
+
+.register_text_section_card > h4{
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.register_text_section_card > form{
+    width: 100%;
+}
+
+.register_text_section_card_form_group{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.register_text_section_card_form_group > div{
+    width: 100%;
+}
+
+.register_text_section_card > form input,
+.register_text_section_card > form select{
+    background-color: #2a233a;
+}
+
+.register_text_section_card > form option:hover{
+    background-color: var(--medium-purple);
+}
+.register_text_section_card p{
+    font-size: 0.75rem;
+    line-height: 27.5px;
+}
+
+.register_text_section_card_button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.register_img_section{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 1;
+    margin-left: -7rem;
+}
+
+.register_img_section img{
+    height: 100%;
+}
+
+.register_text_section_card_svg{
+    width: min(90%, 20rem);
+}
+
+.register_text_section_card_svg > img{
+    width: 100%;
+}
+
+.register_text_section_card_form_paragraph{
+    font-size: 0.5625rem;
+    font-style: italic;
+    line-height: 11px;
+    color: var(--medium-purple);
+}
+
+.register_text_section_card_form_check{
+    display: flex;
+}
+
+.register_text_section_card_form_check > div{
+    margin-right: 1rem;
+}
+
+.register_text_section_card_form_check > p{
+    font-size: 0.625rem;
+    line-height: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.button_text_bigscreen{
+    display: none;
+}
+
+
+@media screen and (min-width: 280px){
+    .register_text_section_card_form_group{
+        flex-direction: row;
+    }
+    
+    .register_text_section_card_form_group > div{
+        width: 45%;
+    }
+}
+
+@media screen and (min-width: 750px){
+    .register{
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+
+    .register_container{
+        width: min(100%, 85rem);
+        padding: 1rem 6rem;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .register_text_section_card_wrapper{
+        background-color: #1c152e;
+    }
+
+    .register_text_section_card{
+        padding: 2rem 1rem;
+    }
+
+    .register_img_section{
+        display: block;
+    }
+
+    .register_text_section_card_svg{
+        display: none;
+    }
+
+    .register_text_section_card_wrapper{
+        order: 2;
+        width: 70%;
+        position: relative;
+        z-index: 2;
+    }
+
+    .register_text_section_card > h3{
+        font-size: 1.46875rem;
+        line-height: 28.5px;
+    }
+
+    .register_text_section_card_paragraph > p{
+        font-size: 0.8125rem;
+        line-height: 16px;
+    }
+
+    .register_text_section_card_paragraph > div > img{
+        height: 1.5125rem;
+        height: 1.625rem;
+    }
+
+    .register_text_section_card > h4{
+        font-size: 1.375rem;
+        line-height: 26.5px;
+    }
+
+    .register_text_section_card_form_paragraph,
+    .register_text_section_card_form_check > p{
+        font-size: 0.75rem;
+    }
+
+    .register_text_section_card_button > button{
+        width: 100%;
+    }
+
+    .button_text_smallscreen{
+        display: none;
+    }
+
+    .button_text_bigscreen{
+        display: inline;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .register{
+        padding-top: 9rem;
+        padding-bottom: 9rem;
+    }
+
+    .register_text_section_card_wrapper{
+        width: 50%;
+        position: relative;
+        z-index: 2;
+    }
+
+    .register_text_section_card > h3{
+        font-size: 1.25rem;
+    }
+
+    .register_container p{
+        font-size: 0.875rem;
+    }
+
+    .register_text_section_card{
+        padding: 4rem 2rem;
+    }
+
+    .register_text_section_card > h3{
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 39px;
+    }
+
+    .register_text_section_card_paragraph > p{
+        font-size: 0.875rem;
+        line-height: 17px;
+    }
+
+    .register_text_section_card_paragraph > div > img{
+        height: 1.625rem;
+    }
+
+    .register_text_section_card > h4{
+        font-size: 1.5rem;
+        line-height: 29px;
+    }
+
+    .register_text_section_card_form_check > div{
+        margin-right: 1.5rem;
+    }
+}

@@ -10,6 +10,7 @@
     padding: 1rem;
     border: 0.1rem sold transparent;
     border-radius: 0.5rem;
+    font-size: 0.7rem;
   }
   
   .alert-info{
@@ -18,8 +19,9 @@
   }
   
   .alert-danger{
-    color: #a02020;
-    background-color: #ffe0e0e0;
+    /* color: #a02020; */
+    color: #ffe0e0e0;
+    background-color: #a02020;
   }
   
   .alert-success{

@@ -1,4 +1,5 @@
-import React from "react"
+import React, { useRef, useEffect } from 'react';
+import { useLocation } from "react-router-dom"
 
 // components
 import { 
@@ -14,22 +15,36 @@ import {
   Footer,
 } from "../../components"
 
-// import objects and functions
-import { } from "../../assets"
-
 // importing css
 import styles from "./home.module.css"
 
 const HomeScreen = () => {
+  const location = useLocation()
+  const elTimeline = useRef();
+  const elOverview = useRef();
+  const elFaq = useRef();
+
+
+  useEffect(() => {
+    if(location.search.includes("scrollTo")){
+      if(location.search.includes("timeline")){
+        window.scrollTo(0, elTimeline.current.offsetTop)
+      } else if(location.search.includes("overview")){
+        window.scrollTo(0, elOverview.current.offsetTop)
+      } else if(location.search.includes("faqs")){
+        window.scrollTo(0, elFaq.current.offsetTop)
+      }
+    }
+  }, [location.search])
 
   return (
     <div className={`${styles.home}`}>
       <SectionOne />
-      <SectionTwo />
+      <SectionTwo elOverview={elOverview} />
       <SectionThree />
       <SectionFour />
-      <SectionFive />
-      <SectionSix />
+      <SectionFive elFaq={elFaq} />
+      <SectionSix elTimeline={elTimeline} />
       <SectionSeven />
       <SectionEight />
       <SectionNine />

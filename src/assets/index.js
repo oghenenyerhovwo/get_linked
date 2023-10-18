@@ -36,6 +36,12 @@ import {
     instagramIcon,
     phoneIcon,
     locationIcon,
+    registerSVG,
+    maleWalking,
+    femaleWalking,
+    successfulMan,
+    successfulIcon,
+    winkEmoji,
 } from "./images"
 
 export {
@@ -76,4 +82,10 @@ export {
     instagramIcon,
     phoneIcon,
     locationIcon,
+    registerSVG,
+    maleWalking,
+    femaleWalking,
+    successfulMan,
+    successfulIcon,
+    winkEmoji,
 }

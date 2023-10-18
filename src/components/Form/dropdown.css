@@ -2,3 +2,93 @@
 /* dropdown */
 /* ============================== */
 
+.app__dropdown_custom {
+    position: relative;
+    width: 100%; /* Set your desired width */
+}
+
+.app__dropdown_custom-button {
+    background-color: #2a233a;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+
+    border: 1px solid #FFFFFF;
+
+    width: 100%;
+    padding: 0.5em 1em;
+    border-radius: 0.25rem;
+    font-size: 0.8rem;
+    line-height: 20px;
+    color: #fff;
+    font-family: var(--font-montserrat);
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.app__dropdown_custom-button_default{
+    color: grey;
+}
+
+.app__dropdown_custom-option_default{
+    color: grey;
+}
+  
+.app__dropdown_custom-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #2a233a;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.app__dropdown_custom-option {
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.app__dropdown_custom-option:first-child{
+    border-top: 1px solid #fff;
+}
+
+.app__dropdown_custom-option:hover {
+    background-color: #d434fe;
+}
+
+.app__dropdown_custom-option.selected {
+    background-color: #d434fe;
+}
+
+.app__dropdown_custom-disabled_container .app__dropdown_custom-button{
+    border: none;
+}
+
+.app__dropdown_custom-disabled{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+
+@media screen and (min-width: 280px){
+    .app__dropdown_custom-button {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+

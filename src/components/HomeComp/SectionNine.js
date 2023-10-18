@@ -27,8 +27,6 @@ const SectionNine = () => {
             participant
           </p>
           <div className={`${styles.sectionnine_text_section_card}`}>
-            <div className={`${styles.sectionnine_text_section_card_overlay}`}>
-            </div>
             <p className="spacing-md">
               At getlinked tech Hackathon 1.0, we 
               value your privacy and are committed 

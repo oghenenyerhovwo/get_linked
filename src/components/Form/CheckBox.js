@@ -9,11 +9,14 @@ const CheckBox = props => {
         checked,
         onChange,
         name,
+        disabled,
+        error,
     } = props
   
   return (
-    <div className="spacing-xs">
+    <div className={`spacing-sm ${error && "checkbox_error"}`}>
         <div className="checkbox-wrapper-13">
+        
         <input 
           id="c1-13" 
           checked={checked}
@@ -21,8 +24,12 @@ const CheckBox = props => {
           type="checkbox"
           onChange={onChange}
           name={name} 
+          disabled={disabled}
         />
-        <label className="checkbox__label" htmlFor="c1-13">{label}</label>
+
+        <div className="spacing-xs form__label checkbox__label">
+          <label>{label}</label>
+        </div>
       </div>
     </div>
   )

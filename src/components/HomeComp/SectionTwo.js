@@ -10,9 +10,10 @@ import {
 // importing css
 import styles from "./sectiontwo.module.css"
 
-const SectionTwo = () => {
+const SectionTwo = props => {
+  const { elOverview } = props
   return (
-    <section className={`${styles.sectiontwo}`}>
+    <section ref={elOverview} className={`${styles.sectiontwo}`}>
       <div className={`${styles.sectiontwo_container}`}>
         <div className={`${styles.sectiontwo_img}`}>
           <img src={bigIdea} alt="bigIdea" />
