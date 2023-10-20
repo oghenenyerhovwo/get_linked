@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import axios from "axios"
 
 // objects, items and functions
 import { 
@@ -14,7 +15,7 @@ import {
   xIcon,
   instagramIcon,
 } from "../../assets"
-import { onChangeError, onSubmitError } from '../../utils/'
+import { onChangeError, onSubmitError, backend_url } from '../../utils/'
 
 // import css
 import styles from "./contact.module.css"
@@ -25,26 +26,51 @@ const ContactScreen = () => {
     firstName: "",
     email: "",
     message: "",
+    phone: "",
   }
   const [form, setForm] = useState(initialFormState)
   const [error, setError] = useState(initialFormState)
   const [emptyFieldError, setEmptyFieldError] = useState("")
   const [loading, setLoading] = useState(false)
+  const [success, setSuccess] = useState(false)
+  const [errorMessage, setErrorMessage] = useState("")
 
-  const handleSubmit = e => {
+  const handleSubmit = async e => {
+      try {
         e.preventDefault()
         setEmptyFieldError("")
         setLoading(true)
         const {isError, errorObject} = onSubmitError(form, error)
         setError(errorObject)
         if(!isError){
-          // dispatch(createListing(form))
-          console.log(form)
+          const formatForm = {
+            email: form.email,
+            phone_number: form.firstName,
+            first_name: form.firstName,
+            message: form.firstName,
+            phone: form.phone,
+          }
+          const { data } = await axios.post(
+            `${backend_url}/hackathon/contact-form`,
+            formatForm,
+          )
+          if(data){
+            setSuccess(true)
+            setTimeout(() => {
+              setSuccess(false)
+            }, 5000);
+          } 
           setLoading(false)
         } else{
           setEmptyFieldError("One or more required fields are empty")
           setLoading(false)
         }
+      } catch (error) {
+        console.log(error)
+        setLoading(false)
+        setErrorMessage("Network error")
+      }
+        
     }
 
     const handleChange = e => {
@@ -76,6 +102,14 @@ const ContactScreen = () => {
                 type="text"
               />
               <Form.Input
+                value={form.phone}
+                onChange={handleChange}
+                name={"phone"}
+                error={error.phone}
+                placeholder={"Enter your phone number"}
+                type="number"
+              />
+              <Form.Input
                 value={form.firstName}
                 onChange={handleChange}
                 name={"firstName"}
@@ -100,6 +134,8 @@ const ContactScreen = () => {
               />
               <div className="spacing-sm"> 
                 {emptyFieldError && <MessageBox variant="danger">{emptyFieldError} </MessageBox>}
+                {emptyFieldError && <MessageBox variant="danger">{emptyFieldError} </MessageBox>}
+                {success && <MessageBox variant="success">{"Your feedback was recieved"} </MessageBox>}
               </div>
               <div className={`${styles.contact_text_section_card_button}`}>
                 {

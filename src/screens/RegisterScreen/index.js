@@ -47,38 +47,50 @@ const RegisterScreen = () => {
         })
         setCategoryList(newCategoryList)
       })
-      .catch(err => console.log(err.response && err.response.data.message ? err.response.data.message : err.message))
+      .catch(err => {
+        console.log(err.response && err.response.data.message ? err.response.data.message : err.message)
+      })
   }, [])
 
-  const handleSubmit = e => {
-        e.preventDefault()
-        setErrorMessage("")
-        setLoading(true)
-        const {isError, errorObject} = onSubmitError(form, error)
-        setError(errorObject)
-        if(!isError){
-          // dispatch(createListing(form))
-          if(isAgree){
-            const formatForm = {
-              email: form.email,
-              phone_number: form.phone,
-              team_name: form.teamsName,
-              group_size: form.groupSize, 
-              project_topic: form.projectTopic,
-              category: form.category,
-              privacy_poclicy_accepted: isAgree,
+  const handleSubmit = async e => {
+        try {
+          e.preventDefault()
+          setErrorMessage("")
+          setLoading(true)
+          const {isError, errorObject} = onSubmitError(form, error)
+          setError(errorObject)
+          if(!isError){
+            if(isAgree){
+              const formatForm = {
+                email: form.email,
+                phone_number: form.phone,
+                team_name: form.teamsName,
+                group_size: form.groupSize, 
+                project_topic: form.projectTopic,
+                category: form.category,
+                privacy_poclicy_accepted: isAgree,
+              }
+              setIsAgreeError(false)
+              const { data } = await axios.post(
+                `${backend_url}/hackathon/registration`,
+                formatForm,
+              )
+              if(data){
+                setSuccess(true)
+              } 
+            } else {
+              setIsAgreeError(true)
+              setErrorMessage("Read through the terms and check if you agree")
             }
-            setIsAgreeError(false)
-            console.log(formatForm)
-            setSuccess(true)
-          } else {
-            setIsAgreeError(true)
-            setErrorMessage("Read through the terms and check if you agree")
+            setLoading(false)
+          } else{
+            setErrorMessage("One or more required fields are empty")
+            setLoading(false)
           }
+        } catch (error) {
+          console.log(error)
           setLoading(false)
-        } else{
-          setErrorMessage("One or more required fields are empty")
-          setLoading(false)
+          setErrorMessage("Network error")
         }
     }
 
@@ -168,7 +180,7 @@ const RegisterScreen = () => {
                     error={error.category}
                     placeholder={"Select your category"}
                     label="Category"
-                    options={[categoryList]}
+                    options={categoryList}
                   />
 
                   <Form.Dropdown
