@@ -39,6 +39,7 @@ const ContactScreen = () => {
       try {
         e.preventDefault()
         setEmptyFieldError("")
+        setErrorMessage("")
         setLoading(true)
         const {isError, errorObject} = onSubmitError(form, error)
         setError(errorObject)
@@ -133,8 +134,7 @@ const ContactScreen = () => {
                 placeholder={"Message"}
               />
               <div className="spacing-sm"> 
-                {emptyFieldError && <MessageBox variant="danger">{emptyFieldError} </MessageBox>}
-                {emptyFieldError && <MessageBox variant="danger">{emptyFieldError} </MessageBox>}
+                {emptyFieldError || errorMessage && <MessageBox variant="danger">{emptyFieldError || errorMessage} </MessageBox>}
                 {success && <MessageBox variant="success">{"Your feedback was recieved"} </MessageBox>}
               </div>
               <div className={`${styles.contact_text_section_card_button}`}>
