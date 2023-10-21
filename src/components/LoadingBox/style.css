@@ -10,6 +10,130 @@
     grid-column: 1 / 13;
   
   }
+
+
+  .loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: min(90%, 15rem);
+    animation-name: beesandbombs;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.82, 0.01, 0.15, 1.01);
+  }
+  .loading .circle {
+    position: relative;
+    background: white;
+    width: min(40%, 6.25rem);
+    height: min(40%, 6.25rem);
+    border-radius: 100%;
+    margin: 0.625rem;
+    float: right;
+    animation-name: beesandbombscircle;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.82, 0.01, 0.15, 1.01);
+  }
+  .loading .circle:before {
+    content: "";
+    position: absolute;
+    background: var(--medium-purple);
+    width: 3.125rem;
+    height: 3.125rem;
+    animation-name: beesandbombscirclebox;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.82, 0.01, 0.15, 1.01);
+  }
+  .loading .circle:nth-child(1)::before {
+    left: 0;
+    bottom: 0;
+    border-bottom-left-radius: 2.5rem;
+  }
+  .loading .circle:nth-child(2)::before {
+    right: 0;
+    bottom: 0;
+    border-bottom-right-radius: 2.5rem;
+  }
+  .loading .circle:nth-child(3)::before {
+    top: 0;
+    left: 0;
+    border-top-left-radius: 2.5rem;
+  }
+  .loading .circle:nth-child(4)::before {
+    top: 0;
+    right: 0;
+    border-top-right-radius: 2.5rem;
+  }
+  .loading:before {
+    content: "";
+    position: absolute;
+    width: 7.5rem;
+    height: 7.5rem;
+    background: var(--medium-purple);
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    animation-name: beesandbombsrev;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.82, 0.01, 0.15, 1.01);
+  }
+  @keyframes beesandbombs {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    50% {
+      transform: translate(-50%, -50%) rotate(90deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+  }
+  @keyframes beesandbombsrev {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    50% {
+      transform: translate(-50%, -50%) rotate(90deg);
+    }
+    52% {
+      visibility: hidden;
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(0deg);
+      visibility: hidden;
+    }
+  }
+  @keyframes beesandbombscircle {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  @keyframes beesandbombscirclebox {
+    0% {
+      visibility: hidden;
+    }
+    50% {
+      visibility: hidden;
+    }
+    51% {
+      visibility: visible;
+    }
+    100% {
+      visibility: visible;
+    }
+  }
+  
   
   .app_loaderbox-loading{
   

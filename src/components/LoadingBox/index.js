@@ -9,8 +9,11 @@ import "./style.css"
 const LoadingBox = () => {
   return (
     <div className="app_loaderbox">
-        <div className="app_loaderbox-loading">
-          <FaHome />
+        <div className="loading">
+          <div className="circle"></div>
+          <div className="circle"></div>
+          <div className="circle"></div>
+          <div className="circle"></div>
         </div>
     </div>
   )
