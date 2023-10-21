@@ -1,7 +1,6 @@
 import React from "react"
 
 // components
-import { FaHome } from "react-icons/fa"
 
 // importing css
 import "./style.css"

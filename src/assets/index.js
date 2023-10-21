@@ -42,6 +42,7 @@ import {
     successfulMan,
     successfulIcon,
     winkEmoji,
+    notFound,
 } from "./images"
 
 export {
@@ -88,4 +89,5 @@ export {
     successfulMan,
     successfulIcon,
     winkEmoji,
+    notFound,
 }

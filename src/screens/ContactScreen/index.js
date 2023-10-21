@@ -134,8 +134,8 @@ const ContactScreen = () => {
                 placeholder={"Message"}
               />
               <div className="spacing-sm"> 
-                {emptyFieldError || errorMessage && <MessageBox variant="danger">{emptyFieldError || errorMessage} </MessageBox>}
-                {success && <MessageBox variant="success">{"Your feedback was recieved"} </MessageBox>}
+                {(emptyFieldError || errorMessage) && <MessageBox variant="danger">{emptyFieldError || errorMessage} </MessageBox>}
+                {success && <MessageBox variant="success">{"Your feedback has been sent"} </MessageBox>}
               </div>
               <div className={`${styles.contact_text_section_card_button}`}>
                 {

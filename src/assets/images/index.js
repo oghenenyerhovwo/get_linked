@@ -41,6 +41,7 @@ import femaleWalking from "./1f6b6-2640.png"
 import successfulMan from "./successful-man-3025713-2526911 1.png"
 import successfulIcon from "./successfully-done-5108472-4288033 1.png"
 import winkEmoji from "./1531010992wink-emoji-woman-png 1.png"
+import notFound from "./not found.png"
 
 export {
     hamburgerMenu,
@@ -86,4 +87,5 @@ export {
     successfulMan,
     successfulIcon,
     winkEmoji,
+    notFound,
 }

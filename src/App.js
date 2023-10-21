@@ -5,6 +5,7 @@ import {BrowserRouter, Routes, Route} from "react-router-dom"
 import HomeScreen from "./screens/HomeScreen"
 import ContactScreen from "./screens/ContactScreen"
 import RegisterScreen from "./screens/RegisterScreen"
+import NotFound from "./screens/NotFound"
 
 // importing components
 import { Header, AppContainer } from "./components"
@@ -24,6 +25,7 @@ function App() {
               <Route path="/contact" element={<ContactScreen />} exact></Route> 
               <Route path="/register" element={<RegisterScreen />} exact></Route> 
               <Route path="/" element={<HomeScreen />} exact></Route> 
+              <Route path="*" element={<NotFound />}></Route> 
             </Routes>
             <Routes>
               
