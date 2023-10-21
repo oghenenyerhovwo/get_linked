@@ -53,6 +53,9 @@ const Footer = () => {
             <p className="spacing-xs">
               <Link to="/register">Register</Link>
             </p>
+            <p className="spacing-xs">
+              <Link to="/">Home</Link>
+            </p>
             <div>
               <h4>Follow us</h4>
               <div>

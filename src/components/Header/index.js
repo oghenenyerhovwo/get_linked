@@ -42,6 +42,9 @@ const NavLinks = (props) => {
     <div className={`${styles.nav_links_container}`}>
       <ul>
           <li>
+            <Link onClick={closeMenu} to="/">Home</Link>
+          </li>
+          <li>
             <Link onClick={closeMenu} to="/?scrollTo=timeline">Timeline</Link>
           </li>
           <li>

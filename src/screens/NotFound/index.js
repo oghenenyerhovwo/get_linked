@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom"
 
 // images
 import {
@@ -19,7 +20,9 @@ const NotFound = () => {
             <h4 className="spacing-sm">Oops!</h4>
             <h3 className="spacing-sm">Page Not Found</h3>
             <p className="spacing-sm">The page you are looking for does not exist or another error occored, go back to home page</p>
-            <button className="register_button">Home</button>
+            <button className="register_button">
+              <Link to="/">Home</Link>
+            </button>
           </div>
         </div>
       </div>
